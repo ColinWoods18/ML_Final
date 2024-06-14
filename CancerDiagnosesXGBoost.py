@@ -1,23 +1,16 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from math import sqrt
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import SGDClassifier  # Import the SGD model
-from sklearn.metrics import mean_squared_error
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.impute import SimpleImputer  # Import the SimpleImputer
-from sklearn.linear_model import SGDRegressor
-from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.impute import SimpleImputer
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.svm import SVC
 import xgboost as xgb
 import seaborn as sns
-
-
 
 # Load the data
 df = pd.read_csv('CancerData.csv')
